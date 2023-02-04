@@ -45,6 +45,10 @@ public class Spawner : MonoBehaviour
 
             if(randomInt==0)
             {
+
+                float randomRot = Random.Range(0,10);
+
+
 				Instantiate(spawn, pos, spawn.transform.rotation);
                 Debug.Log(randomInt);
 			}
