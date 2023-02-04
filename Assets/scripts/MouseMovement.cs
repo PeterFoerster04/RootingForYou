@@ -42,14 +42,13 @@ public class MouseMovement : MonoBehaviour
 		{
 			trailStartTime = trailStartTime - trailDecrement;
 			_trailRenderer.time = trailStartTime;
-			Debug.Log(trailStartTime);
 		}
 
     }
 	private void FixedUpdate()
 	{
 
-		if ((_rb.position.x < mousePos.x&& xMove.x >0)|| (_rb.position.x > mousePos.x && xMove.x < 0) )
+		if ((_rb.position.x < mousePos.x&& xMove.x >0)|| (_rb.position.x > mousePos.x && xMove.x < 0))
         {
 			_rb.AddForce(xMove * Time.deltaTime * speedMultiplier, ForceMode2D.Force);
 			oldVec = xMove;
