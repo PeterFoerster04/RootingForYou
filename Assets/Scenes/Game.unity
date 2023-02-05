@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 1903239}
   - component: {fileID: 1903238}
   - component: {fileID: 1903237}
+  - component: {fileID: 1903240}
   m_Layer: 0
   m_Name: Stone3
   m_TagString: Untagged
@@ -151,7 +152,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -267,6 +268,18 @@ Transform:
   m_Father: {fileID: 1323578283}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1903240
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1903236}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73e2be0f7134b89429a9a0b0978b826b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &73559118
 GameObject:
   m_ObjectHideFlags: 0
@@ -278,6 +291,7 @@ GameObject:
   - component: {fileID: 73559119}
   - component: {fileID: 73559120}
   - component: {fileID: 73559121}
+  - component: {fileID: 73559122}
   m_Layer: 0
   m_Name: AngledPipe
   m_TagString: Untagged
@@ -362,7 +376,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -392,6 +406,18 @@ PolygonCollider2D:
       - {x: -0.17999999, y: -0.57}
       - {x: -0.12, y: -0.45999998}
       - {x: -0.099999994, y: 0.26999998}
+--- !u!114 &73559122
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 73559118}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73e2be0f7134b89429a9a0b0978b826b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &138252587
 GameObject:
   m_ObjectHideFlags: 0
@@ -624,6 +650,7 @@ GameObject:
   - component: {fileID: 191409186}
   - component: {fileID: 191409187}
   - component: {fileID: 191409188}
+  - component: {fileID: 191409189}
   m_Layer: 0
   m_Name: Bone
   m_TagString: Untagged
@@ -708,7 +735,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -785,6 +812,18 @@ PolygonCollider2D:
       - {x: -0.25, y: -1.04}
       - {x: -0.08, y: -0.85999995}
       - {x: -0.06, y: -0.79999995}
+--- !u!114 &191409189
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 191409185}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73e2be0f7134b89429a9a0b0978b826b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &247951915
 GameObject:
   m_ObjectHideFlags: 0
@@ -796,6 +835,7 @@ GameObject:
   - component: {fileID: 247951917}
   - component: {fileID: 247951916}
   - component: {fileID: 247951918}
+  - component: {fileID: 247951919}
   m_Layer: 0
   m_Name: Skull
   m_TagString: Untagged
@@ -880,12 +920,24 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 1.28
+--- !u!114 &247951919
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 247951915}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73e2be0f7134b89429a9a0b0978b826b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &300398342
 GameObject:
   m_ObjectHideFlags: 0
@@ -897,6 +949,7 @@ GameObject:
   - component: {fileID: 300398343}
   - component: {fileID: 300398344}
   - component: {fileID: 300398345}
+  - component: {fileID: 300398346}
   m_Layer: 0
   m_Name: Crate
   m_TagString: Untagged
@@ -981,7 +1034,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -1026,6 +1079,18 @@ PolygonCollider2D:
       - {x: -0.22999999, y: -1.09}
       - {x: -0.099999994, y: -1.06}
       - {x: 0.42, y: -0.95}
+--- !u!114 &300398346
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 300398342}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73e2be0f7134b89429a9a0b0978b826b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &309425641
 GameObject:
   m_ObjectHideFlags: 0
@@ -1607,9 +1672,10 @@ GameObject:
   - component: {fileID: 646938514}
   - component: {fileID: 646938515}
   - component: {fileID: 646938516}
+  - component: {fileID: 646938517}
   m_Layer: 0
   m_Name: FollowTheMousePlease
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2014,8 +2080,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 0.7, y: 1}
+  m_Offset: {x: 0, y: 0.53}
+  m_Size: {x: 0.46, y: 1}
   m_Direction: 0
 --- !u!114 &646938516
 MonoBehaviour:
@@ -2032,6 +2098,18 @@ MonoBehaviour:
   cursorTex: {fileID: 2800000, guid: 4c743745678252944ac1f2c456e2cf17, type: 3}
   cursormode: 1
   hotspot: {x: 0, y: 0}
+--- !u!114 &646938517
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 646938508}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d940e136ef65f734baba963201afc5ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &665657806
 GameObject:
   m_ObjectHideFlags: 0
@@ -2211,6 +2289,7 @@ GameObject:
   - component: {fileID: 723987869}
   - component: {fileID: 723987871}
   - component: {fileID: 723987870}
+  - component: {fileID: 723987872}
   m_Layer: 0
   m_Name: Stone1Rot
   m_TagString: Untagged
@@ -2243,7 +2322,7 @@ CapsuleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0.27}
@@ -2301,6 +2380,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &723987872
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 723987868}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73e2be0f7134b89429a9a0b0978b826b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &760727211
 GameObject:
   m_ObjectHideFlags: 0
@@ -2312,6 +2403,7 @@ GameObject:
   - component: {fileID: 760727214}
   - component: {fileID: 760727213}
   - component: {fileID: 760727212}
+  - component: {fileID: 760727215}
   m_Layer: 0
   m_Name: Stone2
   m_TagString: Untagged
@@ -2329,7 +2421,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -2443,6 +2535,18 @@ Transform:
   m_Father: {fileID: 1323578283}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &760727215
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 760727211}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73e2be0f7134b89429a9a0b0978b826b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &779952058
 GameObject:
   m_ObjectHideFlags: 0
@@ -2454,6 +2558,7 @@ GameObject:
   - component: {fileID: 779952061}
   - component: {fileID: 779952060}
   - component: {fileID: 779952059}
+  - component: {fileID: 779952062}
   m_Layer: 0
   m_Name: Nokia
   m_TagString: Untagged
@@ -2471,7 +2576,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -2546,14 +2651,26 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 779952058}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -138.91, y: -19.97, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -144.71333, y: -3.3864918, z: -0.80816746}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_Father: {fileID: 1323578283}
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &779952062
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 779952058}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b8d888509d44294d9df308b6d31130d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &903990321
 GameObject:
   m_ObjectHideFlags: 0
@@ -3043,6 +3160,7 @@ GameObject:
   - component: {fileID: 1200075765}
   - component: {fileID: 1200075766}
   - component: {fileID: 1200075767}
+  - component: {fileID: 1200075768}
   m_Layer: 0
   m_Name: Stone
   m_TagString: Untagged
@@ -3127,12 +3245,24 @@ CapsuleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0.27}
   m_Size: {x: 1.4, y: 0.98}
   m_Direction: 1
+--- !u!114 &1200075768
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1200075764}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73e2be0f7134b89429a9a0b0978b826b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1226161415
 GameObject:
   m_ObjectHideFlags: 0
@@ -3258,6 +3388,7 @@ Transform:
   - {fileID: 760727214}
   - {fileID: 1903239}
   - {fileID: 1874832606}
+  - {fileID: 779952061}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3272,6 +3403,7 @@ GameObject:
   - component: {fileID: 1623608390}
   - component: {fileID: 1623608391}
   - component: {fileID: 1623608392}
+  - component: {fileID: 1623608393}
   m_Layer: 0
   m_Name: Coffin
   m_TagString: Untagged
@@ -3356,7 +3488,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -3436,6 +3568,18 @@ PolygonCollider2D:
       - {x: 0.82, y: -2.495}
       - {x: 0.84, y: -2.485}
       - {x: 0.87, y: -2.415}
+--- !u!114 &1623608393
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1623608389}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73e2be0f7134b89429a9a0b0978b826b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1701360185
 GameObject:
   m_ObjectHideFlags: 0
@@ -3505,6 +3649,7 @@ GameObject:
   - component: {fileID: 1788693028}
   - component: {fileID: 1788693027}
   - component: {fileID: 1788693026}
+  - component: {fileID: 1788693029}
   m_Layer: 0
   m_Name: Pipe1Rot1
   m_TagString: Untagged
@@ -3522,7 +3667,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.06, y: 0.03}
@@ -3605,6 +3750,18 @@ Transform:
   m_Father: {fileID: 1323578283}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 42.36}
+--- !u!114 &1788693029
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1788693025}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73e2be0f7134b89429a9a0b0978b826b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1811179019
 GameObject:
   m_ObjectHideFlags: 0
@@ -3616,6 +3773,7 @@ GameObject:
   - component: {fileID: 1811179020}
   - component: {fileID: 1811179021}
   - component: {fileID: 1811179022}
+  - component: {fileID: 1811179023}
   m_Layer: 0
   m_Name: Pipe1
   m_TagString: Untagged
@@ -3700,7 +3858,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.06, y: 0.03}
@@ -3716,6 +3874,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.12, y: 2.17}
   m_EdgeRadius: 0
+--- !u!114 &1811179023
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1811179019}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73e2be0f7134b89429a9a0b0978b826b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1827294531
 GameObject:
   m_ObjectHideFlags: 0
@@ -3764,6 +3934,7 @@ MonoBehaviour:
   - {fileID: 760727211}
   - {fileID: 1903236}
   - {fileID: 1874832603}
+  - {fileID: 779952058}
   spawnArrea: {fileID: 1827294531}
   _collider: {fileID: 0}
 --- !u!64 &1827294533
@@ -3952,6 +4123,7 @@ GameObject:
   - component: {fileID: 1874832606}
   - component: {fileID: 1874832605}
   - component: {fileID: 1874832604}
+  - component: {fileID: 1874832607}
   m_Layer: 0
   m_Name: Stone3Rot
   m_TagString: Untagged
@@ -3969,7 +4141,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -4085,6 +4257,18 @@ Transform:
   m_Father: {fileID: 1323578283}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 32.63}
+--- !u!114 &1874832607
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1874832603}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73e2be0f7134b89429a9a0b0978b826b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1897513726
 GameObject:
   m_ObjectHideFlags: 0
@@ -4314,6 +4498,7 @@ GameObject:
   - component: {fileID: 1955899095}
   - component: {fileID: 1955899097}
   - component: {fileID: 1955899096}
+  - component: {fileID: 1955899098}
   m_Layer: 0
   m_Name: Bone1Rot
   m_TagString: Untagged
@@ -4346,7 +4531,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -4475,6 +4660,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1955899098
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1955899094}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73e2be0f7134b89429a9a0b0978b826b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2004318618
 GameObject:
   m_ObjectHideFlags: 0

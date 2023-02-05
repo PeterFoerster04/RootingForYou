@@ -9,7 +9,7 @@ public class SceenManager : MonoBehaviour
     
     public void play()
     {
-        UnityEngine.SceneManagement.SceneManager.LoadScene("SampleScene");
+        UnityEngine.SceneManagement.SceneManager.LoadScene("Game");
     }
     public void Quit()
     {
@@ -17,7 +17,7 @@ public class SceenManager : MonoBehaviour
     }
     public void Retry()
     {
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene("Game");
     }
     public void Settings()
     {

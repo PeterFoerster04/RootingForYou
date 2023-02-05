@@ -46,7 +46,7 @@ public class Spawner : MonoBehaviour
             if(randomInt<7)
             {
 				Instantiate(spawn, pos, spawn.transform.rotation);
-                Debug.Log(randomInt);
+   
 			}
          
         }
