@@ -40,15 +40,11 @@ public class Spawner : MonoBehaviour
             pos = new Vector2(spawnerX, spawnerY);
 
 
-            int randomInt = Random.Range(0,2);
+            int randomInt = Random.Range(0,10);
 
 
-            if(randomInt==0)
+            if(randomInt<7)
             {
-
-                float randomRot = Random.Range(0,10);
-
-
 				Instantiate(spawn, pos, spawn.transform.rotation);
                 Debug.Log(randomInt);
 			}
