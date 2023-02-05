@@ -1856,7 +1856,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   downfallValue: -4
   speedMultiplier: 120
-  xSens: 100
+  xSens: 885.36
 --- !u!50 &646938513
 Rigidbody2D:
   serializedVersion: 4
