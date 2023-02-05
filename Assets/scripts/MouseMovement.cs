@@ -13,7 +13,7 @@ public class MouseMovement : MonoBehaviour
     private Vector2 mousePos;
 	private Vector2 oldVec;
 
-	[SerializeField] private float downfallValue = -2f;
+	public float downfallValue = -2f;
 	[SerializeField] private int speedMultiplier = 100;
 	[SerializeField] private float xSens;
 
