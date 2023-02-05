@@ -15,7 +15,7 @@ public class MouseMovement : MonoBehaviour
 
 	public float downfallValue = -2f;
 	[SerializeField] private int speedMultiplier = 100;
-	[SerializeField] private float xSens;
+	public static float xSens = 1000;
 
 	private float xPosInput;
 	float trailStartTime = 2.3f;

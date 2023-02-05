@@ -4,16 +4,16 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class SceenManager : MonoBehaviour
+public class SceenManagerNew : MonoBehaviour
 {
     
     public void play()
     {
         UnityEngine.SceneManagement.SceneManager.LoadScene("Game");
     }
-    public void Quit()
+    public void QuitToHome()
     {
-        SceneManager.LoadScene("HomeScreen");
+        SceneManager.LoadScene("HomeScene");
     }
     public void Retry()
     {
@@ -21,13 +21,17 @@ public class SceenManager : MonoBehaviour
     }
     public void Settings()
     {
-        SceneManager.LoadScene("SettingsSceen");
+        SceneManager.LoadScene("MenuScene");
     }
     public void GoBack()
     {
-        SceneManager.LoadScene("HomeScreen");
+        SceneManager.LoadScene("HomeScene");
     }
-    public void QuitGame()
+	public void GoBackPlay()
+	{
+		SceneManager.LoadScene("Game");
+	}
+	public void QuitGame()
     {
         Application.Quit();
         Debug.Log("Game ist Quited");
