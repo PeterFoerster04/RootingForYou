@@ -3,23 +3,18 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class SaveVolumeSensi : MonoBehaviour
+public class SaveVolumeSensitivity : MonoBehaviour
 {
     [SerializeField] private Slider volumeSliderSensi = null;
-    [SerializeField] private Text volumeSliderUI3 = null;
-
+    public float volumeValueS = 1;
     // Start is called before the first frame update
     void Start()
     {
         LoadValuesSensi();
     }
-    public void VolumeSliderSensi(float _valume)
-    {
-        volumeSliderUI3.text = _valume.ToString("0.0");
-    }
     public void SaveVolumeButtonSensi()
     {
-        float volumeValueS = volumeSliderSensi.value;
+        volumeValueS = volumeSliderSensi.value;
         PlayerPrefs.SetFloat("VolumeValue", volumeValueS);
         LoadValuesSensi();
     }
@@ -27,7 +22,9 @@ public class SaveVolumeSensi : MonoBehaviour
     {
         float volumeValueS = PlayerPrefs.GetFloat("VolumeValue");
         volumeSliderSensi.value = volumeValueS;
-        AudioListener.volume = volumeValueS;
+        MouseMovement.xSens*= volumeValueS;
+        //AudioListener.volume = volumeValueS;
+        Debug.Log(MouseMovement.xSens);
     }
 
 }
